@@ -33,6 +33,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-vercel": "^1.0.0",
 		"daisyui": "^2.46.0",
 		"pnpm": "^7.20.0"
 	}
