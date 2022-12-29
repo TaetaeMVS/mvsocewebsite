@@ -22,7 +22,7 @@ a.top-left {
 
 <div class="hero min-h-screen" style="background-image: url('../spacejam.jpg');">
   <div class="hero-overlay bg-opacity-0"></div>
-  <div class="hero-content text-center text-neutral-content">
+  <div class="hero-content text-center text-neutral-content -mt-20">
     <div class="navbar bg-base-100">
       <div class="flex-1">
         <a class="btn btn-ghost normal-case text-xl top-left">
@@ -38,7 +38,7 @@ a.top-left {
       </div>
     </div>
     <div class="max-w-2xl">
-      <h1 class="mb-5 text-6xl font-bold">Join MultiVersus OCE</h1>
+      <h1 class="mb-5 text-6xl font-bold text-white">Join MultiVersus OCE</h1>
       <h2 class="mb-5 text-2xl font-bold">We host weekly tournaments. Join our friendly, active community today!</h2>
       <p class="mb-5"></p>
       <a href="https://discord.gg/mvsoce" target="_blank" class="btn btn-primary">MVSOCE Discord</a>
