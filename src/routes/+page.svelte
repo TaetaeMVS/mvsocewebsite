@@ -27,7 +27,7 @@ a.top-left {
       <div class="flex-1">
         <a class="btn btn-ghost normal-case text-xl top-left">
           <img src="../multiversusocetransparent.png" alt="Multiversus OCE logo">
-        </a>        
+        </a>
       </div>
       <div class="flex-none">
         <ul class="menu menu-horizontal px-1">
@@ -46,8 +46,9 @@ a.top-left {
         </ul>
       </div>
     </div>
-    <div class="max-w-md">
-      <h1 class="mb-5 text-5xl font-bold">Join Multiversus OCE</h1>
+    <div class="max-w-2xl">
+      <h1 class="mb-5 text-6xl font-bold">Join MultiVersus OCE</h1>
+      <h2 class="mb-5 text-2xl font-bold">We host weekly tournaments. Join our friendly, active community today!</h2>
       <p class="mb-5"></p>
       <a href="https://discord.gg/mvsoce" target="_blank" class="btn btn-primary">MVSOCE Discord</a>
     </div>
