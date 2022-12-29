@@ -31,7 +31,8 @@ a.top-left {
       </div>
       <div class="flex-none">
         <ul class="menu menu-horizontal px-1">
-          <li><a>Item 1</a></li>
+          <li><a href="https://twitter.com/multiversus_oce" target="_blank" class="text-blue-300 font-bold">Twitter</a></li>
+          <li><a href="https://www.twitch.tv/multiversus_oce" target="_blank" class="text-purple-500 font-bold">Twitch</a></li>
           <li tabindex="0">
             <a>
               Parent
