@@ -33,6 +33,7 @@ a.top-left {
         <ul class="menu menu-horizontal px-1">
           <li><a href="https://twitter.com/multiversus_oce" target="_blank" class="text-blue-300 font-bold">Twitter</a></li>
           <li><a href="https://www.twitch.tv/multiversus_oce" target="_blank" class="text-purple-500 font-bold">Twitch</a></li>
+          <li><a href="https://www.start.gg/user/b53ca12b" target="_blank" class="text-red-500 font-bold">start.gg</a></li>
           <li><a>Coming Soon...</a></li>
         </ul>
       </div>
