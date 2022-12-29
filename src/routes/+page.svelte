@@ -46,3 +46,6 @@ a.top-left {
     </div>
   </div>
 </div>
+<div class="disclaimer p-4 text-center text-neutral-300 font-light">
+  <p>Please note: We are not an official entity or affiliated with MultiVersus in any capacity</p>
+</div>
