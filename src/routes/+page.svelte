@@ -49,7 +49,7 @@ a.top-left {
     <div class="max-w-md">
       <h1 class="mb-5 text-5xl font-bold">Join Multiversus OCE</h1>
       <p class="mb-5"></p>
-      <button class="btn btn-primary">Get Started</button>
+      <a href="https://discord.gg/mvsoce" target="_blank" class="btn btn-primary">MVSOCE Discord</a>
     </div>
   </div>
 </div>
