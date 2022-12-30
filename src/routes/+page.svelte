@@ -18,7 +18,36 @@ a.top-left {
 }
 </style>
 
+<script>
+  import { page } from '$app/stores'
+  import {supabase} from "$lib/supabaseClient.ts";
+  async function signInWithDiscord() {
+    try {
+      console.log("test")
+      const { data, error } = await supabase.auth.signInWithOAuth({
+        provider: 'discord',
+      })
+      // Add the user to the database
+      console.log(data)
+      const { insert_error } = await supabase.from("profiles")
+              .upsert({ discord_id: data.discord_id,
+                email: data.email,
+                username: data.username,
+              })
 
+    } catch (error) {
+      if (error instanceof Error) {
+        alert(error.message)
+      }
+    } finally {
+
+    }
+  }
+
+    async function signOut() {
+        const { error } = await supabase.auth.signOut()
+    }
+</script>
 
 <div class="hero min-h-screen" style="background-image: url('../spacejam.jpg');">
   <div class="hero-overlay bg-opacity-0"></div>
@@ -34,8 +63,21 @@ a.top-left {
           <li><a href="https://twitter.com/multiversus_oce" target="_blank" class="text-blue-300 font-bold">Twitter</a></li>
           <li><a href="https://www.twitch.tv/multiversus_oce" target="_blank" class="text-purple-500 font-bold">Twitch</a></li>
           <li><a href="https://www.start.gg/user/b53ca12b" target="_blank" class="text-red-500 font-bold">start.gg</a></li>
-          <li><a>Coming Soon...</a></li>
+          <li>
+            {#if !$page.data.session}
+              <form class="flex-center">
+                <button type="button" class="btn btn-primary" on:click="{signInWithDiscord}">Sign in with Discord</button>
+              </form>
+            {:else if $page.data.session}
+              <form class="flex-center">
+                <div>
+                  <button class="button block" style="color: white" on:click="{signOut}">Sign Out</button>
+                </div>
+              </form>
+            {/if}
+          </li>
         </ul>
+
       </div>
     </div>
     <div class="max-w-2xl">
