@@ -3,8 +3,7 @@
 	import { supabase } from '$lib/supabaseClient';
 
 	const getURL = () => {
-		console.log(import.meta.env.VITE_SITE_URL);
-		console.log(import.meta.env.VITE_VERCEL_URL);
+		console.log(import.meta.env);
 
 		let url =
 			import.meta.env.VITE_SITE_URL ?? // Set this to your site URL in production env.
@@ -21,7 +20,6 @@
 
 	const signInWithDiscord = async () => {
 		try {
-			console.log('test');
 			console.log(window.location.origin);
 			const { data, error } = await supabase.auth.signInWithOAuth({
 				provider: 'discord',
