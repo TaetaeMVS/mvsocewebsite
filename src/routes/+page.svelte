@@ -2,14 +2,19 @@
 	import { page } from '$app/stores';
 	import { supabase } from '$lib/supabaseClient';
 
+	const getURL = () => {
+		const host = window.location.host;
+		const protocol = window.location.protocol;
+		const url = `${protocol}//${host}`;
+		return url;
+	};
+
 	const signInWithDiscord = async () => {
 		try {
-			console.log('test');
-			console.log(window.location.origin);
 			const { data, error } = await supabase.auth.signInWithOAuth({
 				provider: 'discord',
 				options: {
-					redirectTo: window.location.host
+					redirectTo: getURL()
 				}
 			});
 		} catch (error) {
