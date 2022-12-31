@@ -37,6 +37,7 @@
 		"@supabase/supabase-js": "^2.2.2",
 		"@sveltejs/adapter-vercel": "^1.0.0",
 		"daisyui": "^2.46.0",
-		"pnpm": "^7.20.0"
+		"pnpm": "^7.20.0",
+		"vercel": "^19.1.2"
 	}
 }
