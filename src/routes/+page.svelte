@@ -1,13 +1,14 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import f from '$env/static/public';
 	import { supabase } from '$lib/supabaseClient';
 
 	const getURL = () => {
-		console.log(import.meta.env);
+		console.log(f);
 
 		let url =
-			import.meta.env.VITE_SITE_URL ?? // Set this to your site URL in production env.
-			import.meta.env.VITE_VERCEL_URL ?? // Automatically set by Vercel.
+			f.PUBLIC_SITE_URL ?? // Set this to your site URL in production env.
+			f.PUBLIC_VERCEL_URL ?? // Automatically set by Vercel.
 			'http://localhost:4173/';
 		// Make sure to include `https://` when not localhost.
 		url = url.includes('http') ? url : `https://${url}`;
