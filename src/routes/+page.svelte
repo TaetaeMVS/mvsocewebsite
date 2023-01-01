@@ -133,8 +133,6 @@
 			</h2>
 			<p class="mb-5" />
 			<a href="https://discord.gg/mvsoce" target="_blank" class="btn btn-primary">MVSOCE Discord</a>
-			<button type="button" class="btn btn-primary" on:click={getProfile}>Test Button</button>
-			<button type="button" class="btn btn-primary" on:click={updateProfile}>L + Ratio</button>
 		</div>
 	</div>
 </div>
