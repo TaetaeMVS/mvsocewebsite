@@ -79,7 +79,7 @@
 	<div class="hero-content text-center text-neutral-content -mt-20">
 		<div class="navbar bg-base-100">
 			<div class="flex-1">
-				<a class="btn btn-ghost normal-case text-xl top-left">
+				<a href="https://www.multiversus.au" class="btn btn-ghost normal-case text-xl top-left">
 					<img src="../multiversusocetransparent.png" alt="Multiversus OCE logo" />
 				</a>
 			</div>
@@ -131,7 +131,7 @@
 				We host weekly tournaments. Join our friendly, active community today!
 			</h2>
 			<p class="mb-5" />
-			<a href="https://discord.gg/mvsoce" target="_blank" class="btn btn-primary">MVSOCE Discord</a>
+			<a href="https://discord.gg/mvsoce" target="_blank" rel="noreferrer" class="btn btn-primary">MVSOCE Discord</a>
 		</div>
 	</div>
 </div>
