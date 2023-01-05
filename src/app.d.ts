@@ -7,6 +7,3 @@ declare namespace App {
 	interface PageData {}
 	interface Platform {}
 }
-import { inject } from '@vercel/analytics';
-
-inject();
